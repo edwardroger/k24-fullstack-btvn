@@ -1,0 +1,135 @@
+/* .light-1{
+    width: 50px;
+    height: 50px;
+    background-color: Red;
+    border-radius: 100%; 
+    margin: 10px
+  }
+  .light-2{
+    width: 50px;
+    height: 50px;
+    background-color: Yellow;
+    border-radius: 100%; 
+    margin: 10px;
+  }
+  .light-3{
+    width: 50px;
+    height: 50px;
+    background-color: Green;
+    border-radius: 100%; 
+    margin: 10px;
+  }
+  .Light {
+    background-color: black;
+    width: fit-content;
+    border-radius: 5%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 10px;
+  } */
+  
+  *{
+    margin: 0;
+    padding: 0;
+    border: none;
+  
+
+  }
+
+  .cover{
+    height: 100vh;
+    background-image: url('/Day4_04-12/assets/images/bg-01.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-sign-in{
+    border: 1px solid white;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    margin-top: 10%;
+  }
+
+  h2{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .login-input{
+    margin: 20px 40px 12px;
+
+  }
+
+  .label{
+    font-family: Poppins-Medium;
+    font-size: 12px;
+
+  }
+
+  input{
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    line-height: 1.2;
+    display: block;
+    height: 55px;
+    border-bottom: 1px solid #333;
+  }
+
+  .link{
+    display: inline-flex;
+    font-size: 12px;
+  }
+  .link-1{
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  .link-2{
+    margin-left: 30px;
+  }
+
+  .login-button{
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 16px;
+    height: 32px;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff);
+    color: white;
+  }
+
+  .login-with{
+    margin-top: 16px;
+    margin-left: 90px;
+  }
+  .text{
+    font-size: 16px;
+  }
+  .type-login{
+    border-radius: 100%;
+    width: fit-content;
+  }
+  .fa{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+  }
+  .fa-facebook{
+    margin-left: 8px;
+    margin-right: 8px;
+    background: #3B5998;
+    color: white;
+  }
+  .fa-google{
+    background: red;
+    color: white;
+  }
