@@ -1,0 +1,54 @@
+/* .card{
+    margin: 0 auto;
+
+    &__header{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+
+        &--title{
+            margin-top: 10px;
+        }
+    }
+} */
+.container{
+    display: flex;
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    margin: 0 auto;
+    
+    /* CSS Flexbox (Flexible Box) là một mô hình layout trong CSS, giúp sắp xếp và căn chỉnh các phần tử trên trang web một cách linh hoạt và hiệu quả. Dưới đây là một số thuộc tính và giá trị quan trọng của Flexbox:
+
+    Container Properties (Thuộc tính của Container):
+
+    display: Xác định loại hiển thị của container. Giá trị là flex.
+    flex-direction: Xác định hướng của các phần tử con. Các giá trị có thể là row (mặc định), row-reverse, column, hoặc column-reverse.
+    flex-wrap: Xác định liệu phần tử con có nên xuống dòng khi không đủ không gian hay không. Các giá trị có thể là nowrap (mặc định), wrap, hoặc wrap-reverse.
+    justify-content: Điều chỉnh căn chỉnh theo chiều ngang. Các giá trị bao gồm flex-start (mặc định), flex-end, center, space-between, và space-around.
+    align-items: Điều chỉnh căn chỉnh theo chiều dọc. Các giá trị bao gồm stretch (mặc định), flex-start, flex-end, center, và baseline.
+    align-content: Áp dụng khi có nhiều dòng trong container. Các giá trị bao gồm stretch (mặc định), flex-start, flex-end, center, space-between, và space-around.
+    Item Properties (Thuộc tính của Item):
+
+    order: Xác định thứ tự xuất hiện của item trong container. Giá trị mặc định là 0.
+    flex-grow: Xác định tỷ lệ mà item mở rộng so với các item khác trong container khi có không gian dư. Giá trị mặc định là 0.
+    flex-shrink: Xác định tỷ lệ mà item thu lại so với các item khác trong container khi không đủ không gian. Giá trị mặc định là 1.
+    flex-basis: Xác định kích thước cơ bản của item trước khi chia sẻ không gian còn lại. Giá trị mặc định là auto.
+    flex: Kết hợp flex-grow, flex-shrink, và flex-basis thành một giá trị ngắn gọn. Ví dụ: flex: 1 1 auto. */
+}
+
+.box-1, .box-2, .box-3{
+    width: 200px;
+    height: 200px;
+}
+
+.box-1{
+    background-color: red;
+}
+
+.box-2{
+    background-color: blue;
+}
+
+.box-3{
+    background-color: yellow;
+}

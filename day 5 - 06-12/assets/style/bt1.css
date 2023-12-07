@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 400px; /* Điều chỉnh kích thước bảng cờ theo mong muốn */
+    height: 400px;
+  }
+
+  .chessboard div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+
+  .chessboard div:nth-child(odd) {
+    background-color: #444;
+  }
+
+  .chessboard div:nth-child(even) {
+    background-color: #eee;
+  }
