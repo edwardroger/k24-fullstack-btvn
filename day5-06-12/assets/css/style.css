@@ -1,0 +1,262 @@
+*{
+font-family: "poppins" , sans-serif;
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+}
+.images{
+    width: 1380Px;
+    height: 855px;
+    position: absolute;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+    width: 1380px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: flex-start;
+}
+.box-1{
+    width: 270px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.heading{
+    margin-top: 35px;
+}
+h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: rgb(82, 79, 76);
+}
+.box-images{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f6e4e4;
+    border: 0px;
+    position: absolute;
+    margin-left: 70px;
+    display:block;
+    justify-content: center;
+}
+.icon i{
+    margin-top: 4px;
+}
+.submit{
+    width: 131px;
+    height: 30px;
+    background-color: red;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
+.input-field{
+    display: flex;
+    justify-content: center;
+}
+.Note-area{
+    width: 210px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+p{
+    font-size: small;
+    margin-top: 5px;
+}
+.end{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.box-2{
+    width: 556px;
+    height: 650px;
+    background-color: #fff;
+    margin: 30px;
+    position: absolut;
+    border-radius: 5px;
+    
+}
+.profile{
+    display: flex;
+    justify-content:left;
+    margin: 40px;
+    
+}
+.heading-profile{
+    width: 556px;
+    height: 128px;
+    background-color: bisque;
+    position: absolute;
+}
+.tab-btns{
+    display: flex;
+    justify-content:left;
+    margin: 40px;
+}
+.user-info{
+    background-color: transparent;
+    border: none;
+    color: black; /* Màu chữ */
+    box-shadow: none;
+    margin: 5px;
+}
+.billing-info{
+    background-color: transparent;
+    border: none;
+    color: black; /* Màu chữ */
+    box-shadow: none;
+    margin: 5px;
+}
+.body-profile{
+    background-color: #fff;
+    position:relative;
+    top: 188px;
+}
+.name, .pass, .email{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.user-name, .confirm-password, .confirm-email-address{
+    width: 218px;
+    height: 37px;
+    border-radius: 5px;
+    /* margin-right: 40px; */
+}
+.full-name, .Pass-word, .email-address{
+    width: 218px;
+    height: 37px;
+    margin-left: 40px;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+.fl,.p,.ea{
+    margin-left: 40px;
+}
+form {
+    margin: 0 40px 25px 5px;
+}
+label{
+    font-size: small;
+}
+h2{
+    font-size: 20px;
+    border: 0;
+    margin-left: 40px;
+}
+.social-profile{
+    display:flex;
+    justify-content:center;
+    margin: 40px;
+}
+.social-f{
+   display: flex;
+   margin-left: px;
+    
+}
+.social-t{
+    display: flex;
+    margin-left: 40px;
+     
+ }
+.i-con{
+    color: #fff;
+    border: 1px solid black;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.facebook, .twitter{
+    background-color: blue;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 2px;
+}
+.i-con i{
+    margin-top: 5px;
+    margin-left: 4px;
+}
+.social-facebook input{
+    height: 37px;
+    width: 180px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.social-twitter input{
+    height: 37px;
+    width: 180px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+input{
+    height: 37px;
+    width: 190px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.update-info{
+    background-color: red;
+    width: 150px;
+    height: 37px;
+    margin-left: 40px;
+    color: #fff;
+    border-radius: 5px;
+}

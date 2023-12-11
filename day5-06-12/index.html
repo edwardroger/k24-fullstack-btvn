@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box-1">
+            <div class="heading">
+                <div class="heading">
+                    <h1>Janned Allan</h1>
+                    <a href="">@James</a>
+                </div>
+            </div>
+            <div class="box-images">
+                <img src="./assets/images/tải xuống (1).jfif" alt="">
+                <div class="icon">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Upload New Photo">
+            </div>
+            <div class="Note-area">
+                <p>Upload a new avatar.Larger image will be resized automatically. <br><br> Maximum upload size is <b>1 MB</b></p>
+            </div>
+            <p class="end">Member Since: <b>29 Sepetember 2019</b></p>
+        </div>
+        <div class="box-2">
+            <div class="heading-profile">
+                <h1 class="profile"> Edit Profile </h1>
+                <div id="user-info" class="tab active">
+                    <!-- Hình thức thông tin người dùng -->
+                  </div>
+                  
+                <div id="billing-info" class="tab">
+                    <!-- Hình thức thông tin thanh toán -->
+                </div>
+                <div class="tab-btns">
+                    <button class="user-info" onclick="openTab('user-info')">User Info</button>
+                    <button class="billing-info" onclick="openTab('billing-info')">Billing Information</button>
+                </div>
+            </div>
+            <div class="body-profile">
+                <div class="name">
+                    <form action="">
+                        <label class="fl">Full name</label>
+                        <br>
+                        <input class="full-name" type="text">
+                    </form>
+                    
+                    <form action="">
+                        <label class="us">User name</label>
+                        <br>
+                        <input class="user-name" type="text">
+                    </form>
+                </div>
+                <div class="pass">
+                    <form action="">
+                        <label class="p" >Password</label>
+                        <br>
+                        <input class="Pass-word" type="password" placeholder="    **************">
+                    </form>
+                    
+                    <form action="">
+                        <label class="cp">Comfirm password</label>
+                        <br>
+                        <input class="confirm-password" type="password" placeholder="    **************">
+                    </form>
+            </div>
+            <div class="email">
+                <form action="">
+                    <label class="ea" >Email Address</label>
+                    <br>
+                    <input class="email-address" type="email" placeholder="">
+                </form>
+                
+                <form action="">
+                    <label class="cea">Comfirm Email Address</label>
+                    <br>
+                    <input class="confirm-email-address" type="email">
+                </form>
+            </div>
+            <h2>Social Profile</h2>
+            <div class="social-profile">
+                <div class="social-f">
+                    <div class="i-con">
+                        <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+                    </div>
+                    <div class="social-facebook">
+                        <input type="text" placeholder="    Facebook Userename">
+                    </div>
+                </div>
+                <div class="social-t">
+                    <div class="i-con">
+                        <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+                    </div>
+                    <div class="social-twitter">
+                        <input type="text" placeholder="    Twitter Username">
+                    </div>
+                </div>
+            </div>
+            <input class="update-info" type="submit" value="Update info">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
