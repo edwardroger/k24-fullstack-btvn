@@ -10,16 +10,18 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f5f5f5; /* Màu nền cho container */
+    background-color: lightblue; /* Màu nền cho container */
   }
   
   /* Style cho phần avatar profile */
   .avatar-profile {
     width: 30%;
+    height: 500px;
     padding: 20px;
     background-color: #fff; /* Màu nền cho phần avatar */
     border-radius: 10px; /* Bo góc cho khối */
     text-align: center; /* Căn giữa nội dung */
+    box-shadow: 5px 5px 5px #888888; /* Tạo hiệu ứng đổ bóng */
   }
   
   /* Style cho ảnh đại diện */
@@ -30,11 +32,32 @@ body {
     margin-bottom: 10px; /* Khoảng cách giữa ảnh và text */
   }
   
+.avatar-profile form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.avatar-form-profile input{
+  height: 150px;
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  overflow: auto;
+  white-space: normal;
+}
+
+.avatar-form-profile label{
+  text-align: center;
+  padding: 40px;
+}
+
   /* Style cho button upload ảnh */
   .avatar-profile button {
     padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #4CAF50; /* Màu nền cho button */
+    margin: 15px;
+    background-color: red; /* Màu nền cho button */
     color: white; /* Màu chữ cho button */
     border: none;
     border-radius: 5px; /* Bo góc cho button */
@@ -43,10 +66,11 @@ body {
   
   /* Style cho phần edit profile */
   .edit-profile {
-    width: 55%;
-    padding: 20px;
+    width: 60%;
+    padding: 15px;
     background-color: #fff; /* Màu nền cho phần edit */
     border-radius: 10px; /* Bo góc cho khối */
+    box-shadow: 5px 5px 5px #888888; /* Tạo hiệu ứng đổ bóng */
   }
   
   /* Style cho header trong edit profile */
@@ -70,7 +94,7 @@ body {
   /* Style cho các input */
   .edit-profile input[type="text"],
   .edit-profile input[type="password"] {
-    width: 100%; /* Chiều rộng tối đa */
+    width: 45%; /* Chiều rộng tối đa */
     padding: 10px; /* Đệm bên trong input */
     margin-bottom: 10px; /* Khoảng cách giữa các input */
     border: 1px solid #e0e0e0; /* Viền cho input */
@@ -80,7 +104,7 @@ body {
   /* Style cho button update thông tin */
   .edit-profile button {
     padding: 10px 20px;
-    background-color: #2196F3; /* Màu nền cho button */
+    background-color: red; /* Màu nền cho button */
     color: white; /* Màu chữ cho button */
     border: none;
     border-radius: 5px; /* Bo góc cho button */

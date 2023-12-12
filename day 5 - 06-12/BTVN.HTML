@@ -15,10 +15,11 @@
                 <img src="../day 5 - 06-12/assets/images/pexels-simon-robben-614810.jpg" alt="my avatar">
             </div>
             <button>Upload New Photo</button>
-            <form action="">
-                <input type="text" name="" id="" cols="30" rows="10" placeholder="Upload a new avatar. Larger image will be resized automatically. Maximum upload size is 1 MB" disabled></textarea>
-                <label for="">Member Since: 29 September 2019</label>
-            </form>
+            <div class="avatar-form-profile">
+                <form action="">
+                    <input type="text" name="" id="" cols="30" rows="10" placeholder="Upload a new avatar. Larger image will be resized automatically. Maximum upload size is 1 MB" disabled></textarea>
+                    <label for="">Member Since: <b>29 September 2019</b></label>
+            </div>
         </div>
         <div class="edit-profile">
             <header>
@@ -29,18 +30,23 @@
                 </div>
             </header>
             <form action="/edit-info" method="post">
-                <label for="">Full Name</label>
-                <input type="text" required>
-                <label for="">Username</label>
-                <input type="text" required>
-                <label for="">Password</label>
-                <input type="password" required>
-                <label for="">Confirm Password</label>
-                <input type="text" required>
-                <label for="">Email Address</label>
-                <input type="text" required>
-                <label for="">Confirm Email Address</label>
-                <input type="text" required>
+                <div class="edit">
+                    <label for="">Full Name</label>
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <input type="text" required>
+                    <label for="">Password</label>
+                    <input type="password" required>
+                </div>
+                <div class="confirm">
+                    <label for="">Confirm Password</label>
+                    <input type="text" required>
+                    <label for="">Email Address</label>
+                    <input type="text" required>
+                    <label for="">Confirm Email Address</label>
+                    <input type="text" required>
+                </div>
+                
             </form>
             <form action="/social-contact" method="post">
                 <h3>Social Profile</h3>
