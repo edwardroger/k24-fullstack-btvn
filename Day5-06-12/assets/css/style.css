@@ -1,0 +1,144 @@
+
+.td_container {
+  background-color: aliceblue;
+  display: flex;
+  height: 890px;
+  width: 100%;
+  justify-content: center;
+  font-family: Tahoma,sans-serif;
+}
+
+/* Jamed Allan */
+
+.td_inner-1 {
+  background-color: white;
+  width: 300px;
+  height: 430px;
+  margin-top: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 24px;
+  text-align: center;
+}
+
+h2 {
+  margin: 5px;
+}
+
+h5 {
+  margin-top: 2px;
+}
+
+.avatar {
+  vertical-align: middle;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.upload {
+  border: 0;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.box {
+  background-color: aliceblue;
+  height: 100px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.box-1, .box-2 {
+  padding: 10px;
+  margin: 8px;
+}
+
+.box-3 {
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.upload {
+  background-color: red;
+  color: white;
+  width: 180px;
+  height: 40px;
+}
+
+ /* Edit profile */
+
+.td_inner-2 {
+  background-color: white;
+  margin-top: 80px;
+  margin-left: 10px;
+  width: 565px;
+  height: 700px;
+  padding: 24px;
+}
+
+h1 {
+  margin-left: 35px;
+}
+
+h3 {
+  margin: 30px;
+  margin-left: 35px;
+}
+
+.row {
+  display: grid;
+}
+
+label{
+  margin-left: 35px;
+}
+
+.texture-1 {
+  margin-top: 50px;
+}
+
+.texture-1, .texture-2, .texture-3 {
+  display: flex;
+  margin-top: 50px;
+
+}
+
+.input {
+  width: 225px;
+  height: 40px;
+  margin-left: 35px;
+  border-radius: 5px;
+  border: 1px solid black ;
+}
+
+.icon {
+  display: flex;
+
+}
+
+.username {
+  height: 40px;
+  width: 180px;
+  margin-left: 80px;
+  border-radius: 5px;
+  border: 1px solid black ;
+  
+}
+
+#inmage {
+  position: absolute;
+  margin-left: 35px;
+  width: 44px;
+  height: 44px;
+}
+
+.update {
+  background-color: red;
+  color: white;
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0 ;
+  margin: 35px;
+}
