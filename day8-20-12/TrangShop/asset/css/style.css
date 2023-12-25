@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid{
+    background-color: rgb(34, 203, 203);
+    height: 40px;
+}
+.navbar-img{
+    width: 20%;
+    height: 40px;
+   display: flex;
+}
+.navbar-img img{
+    object-fit: cover;
+    margin-left: 30%;
+}
+.navbar-collapse{
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+.nav-item a{
+    color: #fff !important;
+}
+.nav-icon{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.nav-icon i{
+    color: #fff;
+    margin-right: 70%;
+}
+.item{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+}
+.item-instruct{
+    border: 1px solid rgb(56, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.item-instruct i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.product-category{
+    width: 30%;
+    height: 750px;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.product-category-top{
+    background-color: rgb(37, 220, 131);
+    height: 40px;
+   
+}
+.product-category-top h3{
+    margin: auto;
+    color: #fff;
+    margin-left: 20px;
+}
+.product-category-body{
+    margin-left: 10; 
+}
+a > li{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    width: 100%;
+    margin-left: -10px;
+}
+input{
+    width: 100%;
+    
+}
+.product-category-body2,.product-category-body1{
+    margin-top: 20px;
+}
+.product-category-body  span{
+    margin-left: -10px;
+}
+.product-category-body2 li{
+    list-style-type: none;
+    margin-left: -10px;
+}
+.product-categogy-bottom{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.product-categogy-bottom img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.product-discounted{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.product-discounted-top{
+    background-color: rgb(242, 247, 245);
+    height: 40px;
+}
+.product-discounted-top h3{
+    color:rgb(37, 35, 35);
+}
+.product-discounted-body{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.col-4{
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.row{
+    width: 100%;
+}
+.card{
+    height: 335px;
+}
+.card img{
+    margin-top: 20px;
+}
+.card-body{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.card-body span{
+    margin-left: 20%;
+    width: 100%;
+}
+.price{
+    color: aqua;
+}
+.container hr{
+    background-color: rgb(37, 220, 131);
+
+}
