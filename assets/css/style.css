@@ -4,7 +4,7 @@ body {
 }
 
 .banner-background {
-  background-image: url(images/banner-large-1.jpg);
+  background-image: url(../images/banner-2.jpg);
   background-size: cover;
   opacity: 0.9;
 }
