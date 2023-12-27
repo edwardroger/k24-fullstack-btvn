@@ -1,0 +1,14 @@
+.container{
+    font-family: "Sofia", sans-serif;
+    background-color: lightblue;
+}
+
+.form-check{
+    padding-top: 20px;
+}
+
+.btn-login{
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 550px;
+}
