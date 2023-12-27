@@ -1,0 +1,20 @@
+.sale {
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+}
+.new {
+    background-color: chocolate;
+    color: white;
+    font-size: 14px;
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    left: 180px;
+    text-align: center;
+}
