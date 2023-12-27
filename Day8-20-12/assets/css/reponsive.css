@@ -3,12 +3,11 @@
 
 }
 
-
 /* Tablet & Mobile*/
 @media (max-width: 63.9375em){
     /* BEGIN INDEX */
     .header .mobile-menu-btn {
-        display: block;
+        display: block!important;
         padding: 0 8px;
     }
 
