@@ -12,9 +12,3 @@
     padding: 10px 20px;
     width: 550px;
 }
-
-@media (min-width: 576px) {
-    .btn-login {
-        width: auto; /* Reset width for larger screens */
-    }
-}

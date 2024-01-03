@@ -1,0 +1,35 @@
+.container{
+    font-family: "Sofia", sans-serif;
+    background-color: lightblue;
+}
+
+.form-check{
+    padding-top: 20px;
+}
+
+.btn-login{
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 550px;
+    margin-right: 10px;
+}
+
+.btn-facebook {
+    margin-bottom: 10px; 
+}
+
+.login-buttons-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.btn-facebook,
+.btn-google {
+    width: 100%; 
+}
+
+.btn-facebook,
+.btn-google {
+    max-width: 200px;
+}
