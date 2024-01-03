@@ -51,6 +51,12 @@
         flex-direction: column;
     }
     /* END LOGIN */
+
+    /* BEgin Contact */
+    .contact-page .right-container {
+        margin-left: 0px;
+    }
+    /* ENd Contact */
 }
 
 

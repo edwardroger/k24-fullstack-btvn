@@ -25,4 +25,18 @@ function chuyenTrang() {
     }, 500); // Timeout 500ms để chờ cho hiệu ứng fade out trước khi chuyển trang
 }
        
+/* function tăng giảm số lượng */
+function decreaseQuantity() {
+    var quantityInput = document.getElementById("quantity");
+    var currentQuantity = parseInt(quantityInput.value);
+    if (currentQuantity > 1) {
+      quantityInput.value = currentQuantity - 1;
+    }
+  }
+
+  function increaseQuantity() {
+    var quantityInput = document.getElementById("quantity");
+    var currentQuantity = parseInt(quantityInput.value);
+    quantityInput.value = currentQuantity + 1;
+  }
     

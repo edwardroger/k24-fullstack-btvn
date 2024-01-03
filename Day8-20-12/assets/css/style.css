@@ -181,23 +181,6 @@
 
 /* End Most-played  */
 
-/* Begin categories */
-.categories {
-    margin-top: 120px;
-}
-
-.categories .section-item-container{
-    background-color: #0071f8;
-}
-
-.categories h4 {
-    font-weight: 600;
-    color: #fff;
-    padding: 22px;
-    margin-bottom: 0px;
-}
-/* End categories */
-
 /* Begin block-sub */
 .block-sub {
     margin-top: 120px;

@@ -37,6 +37,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #4a4a4a;
+    letter-spacing: 0.7px;
+}
+
 .btn-main {
     height: 50px;
     background-color: #ee626b;
@@ -291,8 +298,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* EndTrending */
 
+/* Begin categories */
+.categories {
+    margin-top: 120px;
+}
+
+.categories .section-item-container{
+    background-color: #0071f8;
+}
+
+.categories h4 {
+    font-weight: 600;
+    color: #fff;
+    padding: 22px;
+    margin-bottom: 0px;
+}
+/* End categories */
+
 /* Begin footer */
 .footer {
+    margin-top: 120px;
     background-color: #0071f8;
     padding: 50px 0px;
     border-radius: 150px 150px 0 0;
@@ -310,7 +335,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .support-content li {
     margin: 12px 8px 12px 8px;
-
 }
 
 .support-content li span em{
