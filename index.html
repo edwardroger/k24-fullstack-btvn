@@ -4,42 +4,362 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Libraries Stylesheet -->
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-transparent">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fs-1" href="index.html"
+          >Electo<span class="text-danger">Store</span></a
+        >
+        <!-- Toggle btn -->
+        <button
+          class="navbar-toggler shadow-0 border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar -->
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NavBar</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- sidebarBody -->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul
+              class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-2 me-3 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home<i class="fa-solid fa-house ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-2 me-3" href="#product"
+                  >Products<i class="fa-solid fa-laptop ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#new" class="nav-link btn-2 me-3"
+                  >News<i class="fa-regular fa-newspaper ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-2 me-3 active"
+                  aria-current="page"
+                  href="#contact"
+                  >Contact<i class="fa-solid fa-phone ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-2 me-3 active"
+                  aria-current="page"
+                  href="shoppingCard.html"
+                  >Shopping Card<i class="fa-solid fa-cart-shopping ms-1"></i
+                ></a>
+              </li>
+            </ul>
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+            >
+              <a href="payMethod.html" class="btn-2">PayMent</a>
+              <a
+                href=""
+                class="login-button text-white btn px-3 py-1 bg-danger rounded-4"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid topbar-top bg-dark mt-1">
+      <div class="container">
+        <div class="d-flex justify-content-between topbar py-2">
+          <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+            <a href="#" class="me-4 text-secondary"
+              ><i class="fas fa-map-marker-alt me-2 text-white"></i>79 Nguỵ Như
+              Kon Tum
+            </a>
+            <a href="#" class="me-4 text-secondary"
+              ><i class="fas fa-phone-alt me-2 text-white"></i>+84 12345678</a
+            >
+            <a href="#" class="text-secondary"
+              ><i class="fas fa-envelope me-2 text-white"></i>Email@gmail.com</a
+            >
+          </div>
+          <div class="text-end pe-4 me-4 border-end border-white search-btn">
+            <div class="search-form">
+              <form method="post" action="index.html">
+                <div class="form-group">
+                  <div class="d-flex">
+                    <input
+                      type="search"
+                      class="form-control border-0 rounded-pill"
+                      name="search-input"
+                      value=""
+                      placeholder="Search Here"
+                      required=""
+                    />
+                    <button type="submit" value="Search Now!" class="btn">
+                      <i class="fa fa-search text-white"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center topbar-icon"
+          >
+            <a href="#" class="me-4"
+              ><i class="fab fa-facebook-f text-white"></i
+            ></a>
+            <a href="#" class="me-4"
+              ><i class="fab fa-twitter text-white"></i
+            ></a>
+            <a href="#" class="me-4"
+              ><i class="fab fa-instagram text-white"></i
+            ></a>
+            <a href="#" class=""
+              ><i class="fab fa-linkedin-in text-white"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
-            <a class="text-white fs-1" href="index.html">ElectoStore</a>
+          <div
+            class="modal fade"
+            id="exampleModalToggle"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-black p-4 border">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4" id="exampleModalToggleLabel">
+                    Login
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="form-outline mt-2 mb-4">
+                  <label class="form-label" for="form2Example1" type="dasds"
+                    >Email address</label
+                  >
+                  <input type="email" id="form2Example1" class="form-control" />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form2Example2">Password</label>
+                  <input
+                    type="password"
+                    id="form2Example2"
+                    class="form-control"
+                  />
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="form2Example31"
+                        checked
+                      />
+                      <label class="form-check-label" for="form2Example31">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
+                  </div>
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-block mb-3"
+                >
+                  Sign in
+                </button>
+                <div class="text-center">
+                  <p class="mb-1">or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github text-white"></i>
+                  </button>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <p>
+                    Not a member?
+                    <a
+                      class="text-danger"
+                      href="#"
+                      data-bs-target="#exampleModalToggle2"
+                      data-bs-toggle="modal"
+                      >Register</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
-            <div class="">
-              <button
-                class="btn btn-black btn-outline-danger text-white mt-2 btn--show-modal"
-              >
-                <a class="" href="#">Log in</a>
-              </button>
-              <button
-                class="btn btn-black btn-outline-danger text-white mt-2 btn--pay"
-              >
-                <a href="./assets/index/payMethod.html">Payment</a>
-              </button>
+          <div
+            class="modal fade"
+            id="exampleModalToggle2"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-black p-4 border">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4" id="exampleModalToggleLabel">
+                    Register
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="form-outline mt-2 mb-4">
+                  <label class="form-label" for="form2Example1" type="dasds"
+                    >Email address</label
+                  >
+                  <input type="email" id="form2Example1" class="form-control" />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form2Example2">Password</label>
+                  <input
+                    type="password"
+                    id="form2Example2"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form2Example2"
+                    >Repeat Password</label
+                  >
+                  <input
+                    type="password"
+                    id="form2Example2"
+                    class="form-control"
+                  />
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-block mb-3"
+                >
+                  Create Account
+                </button>
+                <div class="text-center">
+                  <p class="mb-1">or register with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github text-white"></i>
+                  </button>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <p>
+                    Already have an account?
+                    <a
+                      class="text-danger"
+                      href="#"
+                      data-bs-target="#exampleModalToggle"
+                      data-bs-toggle="modal"
+                      >Login</a
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </header>
-
-      <div class="nav-scroller py-1 mt-2 mb-2">
-        <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-white btn-2" href="#products">Technology</a>
-          <a class="p-2 text-white btn-2" href="#Collections">Collections</a>
-          <a class="p-2 text-white btn-2" href="#footer">Contact</a>
-          <a class="p-2 text-white btn-2" href="#footer">About US</a>
-        </nav>
-      </div>
     </div>
 
     <div class="container mb-5 carousel-banner">
@@ -181,6 +501,1205 @@
       </div>
     </div>
     <hr />
+
+    <section>
+      <div class="container pt-5">
+        <nav class="row gy-4">
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-laptop fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">LapTop</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-mobile fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">SmartPhones</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i
+                      class="fa-solid fa-headphones fa-xl fa-fw text-white"
+                    ></i>
+                  </button>
+                  <div class="">HeadPhone</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-tablet fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">Tablet</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-sim-card fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">SimCard</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-laptop fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">LapTop</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-laptop fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">LapTop</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-laptop fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">LapTop</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-camera fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">Camera</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-computer fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">Computer</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-sd-card fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">MemoryCard</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-computer fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">Computer</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="text-white fas fa-mobile fa-xl fa-fw"></i>
+                  </button>
+                  <div class="">Smartphones</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-computer fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">Computer</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-computer fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">Computer</div>
+                </a>
+              </div>
+              <div class="col-3">
+                <a
+                  href="#"
+                  class="text-center d-flex flex-column justify-content-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger mx-auto p-3 mb-2"
+                  >
+                    <i class="fa-solid fa-computer fa-xl fa-fw text-white"></i>
+                  </button>
+                  <div class="">Computer</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <div id="contact" class="container-fluid wrap-page">
+      <div class="left-sidebar mt-3 ms-3">
+        <aside class="left-sidebar ms-1 pt-2">
+          <div class="sidebarBox">
+            <div class="m-3">Sign up for consultation</div>
+
+            <form class="dktv" method="post" action="" name="dktvcontact">
+              <input type="hidden" value="" name="sourcelink" />
+              <input type="hidden" value="" name="link" />
+              <input type="hidden" value="4135" name="category" />
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      required="required"
+                      minlength="1"
+                      maxlength="50"
+                      name="name"
+                      placeholder="Your full name*"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      pattern=".{8,12}"
+                      required=""
+                      name="phone"
+                      placeholder="Phone number*"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      maxlength="50"
+                      name="email"
+                      placeholder="Your email address"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      required="required"
+                      name="detail"
+                      maxlength="300"
+                      rows="8"
+                      placeholder="Contact content*"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <button
+                    type="submit"
+                    name="btndktvContact"
+                    class="btn btn-outline-danger m-3 text-white"
+                  >
+                    Sign up for consultation
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
+      <div id="product" class="right col-9 m-5">
+        <div class="bg-dark p-4 rounded-2 mb-5">
+          <div class="col-12 mb-5">
+            <h4 class="d-flex justify-content-between align-items-center">
+              Featured Products
+              <small class="pull-right">200+ featured products</small>
+            </h4>
+          </div>
+          <div class="row">
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide p-3"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    class="row d-flex justify-content-center align-items-center ms-5"
+                  >
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/1.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/4.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/3.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/2.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="row d-flex justify-content-center align-items-center ms-5 mb-3"
+                  >
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/5.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/6.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/7.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                      <a href="product_details.html"
+                        ><img src="themes/images/products/8.jpg" alt=""
+                      /></a>
+                      <div class="caption">
+                        <h5>Product name</h5>
+                        <h4>
+                          <a class="btn btn-danger" href="product_details.html"
+                            >VIEW</a
+                          >
+                          <span class="pull-right">$222.00</span>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      class="row d-flex justify-content-center align-items-center ms-5 mb-3"
+                    >
+                      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <a href="product_details.html"
+                          ><img src="themes/images/products/9.jpg" alt=""
+                        /></a>
+                        <div class="caption">
+                          <h5>Product name</h5>
+                          <h4>
+                            <a
+                              class="btn btn-danger"
+                              href="product_details.html"
+                              >VIEW</a
+                            >
+                            <span class="pull-right">$222.00</span>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <a href="product_details.html"
+                          ><img src="themes/images/products/10.jpg" alt=""
+                        /></a>
+                        <div class="caption">
+                          <h5>Product name</h5>
+                          <h4>
+                            <a
+                              class="btn btn-danger"
+                              href="product_details.html"
+                              >VIEW</a
+                            >
+                            <span class="pull-right">$222.00</span>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <a href="product_details.html"
+                          ><img src="themes/images/products/11.jpg" alt=""
+                        /></a>
+                        <div class="caption">
+                          <h5>Product name</h5>
+                          <h4>
+                            <a
+                              class="btn btn-danger"
+                              href="product_details.html"
+                              >VIEW</a
+                            >
+                            <span class="pull-right">$222.00</span>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <a href="product_details.html"
+                          ><img src="themes/images/products/12.jpg" alt=""
+                        /></a>
+                        <div class="caption">
+                          <h5>Product name</h5>
+                          <h4>
+                            <a
+                              class="btn btn-danger"
+                              href="product_details.html"
+                              >VIEW</a
+                            >
+                            <span class="pull-right">$222.00</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid wrap-page">
+      <div class="left-sidebar mt-3 ms-3 me-5">
+        <aside class="left-sidebar ms-1 pt-2">
+          <div class="sidebarBox">
+            <ul class="list-group">
+              <h3 class="m-2">Category</h3>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center border rounded-top"
+              >
+                Laptop
+                <span class="badge bg-primary rounded-pill">10</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Phone
+                <span class="badge bg-primary rounded-pill">5</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Tablets
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Camera
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Clock
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                SmartWatch
+                <span class="badge bg-primary rounded-pill">1</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                MemoryCard
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                PC
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Accesory
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                MemoryCard
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Sim
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                A second list item
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                A second list item
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                A second list item
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                A second list item
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                A second list item
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                A second list item
+                <span class="badge bg-primary rounded-pill">2</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="right ms-5">
+        <div class="px-5">
+          <div>
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center mt-3"
+            >
+              <h4 class="text-uppercase m-3">Our New Arrivals</h4>
+              <a href="#products" class="btn-link">View All Products</a>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5">
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="./assets/images/post-thumbnail-4.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-1.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-2.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Smart Phone 128GB RAM</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$55.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-3.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Smart Phone 128GB RAM</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$55.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-4.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Smart Phone 128GB RAM</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$55.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">22 Inch LED Display</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$65.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-2.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">22 Inch LED Display</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$65.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-3.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">22 Inch LED Display</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$65.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5">
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="./assets/images/post-thumbnail-4.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-1.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Phone Cover 5.6 inches</a>
+                  </h5>
+                  <span>$95.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-2.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Smart Phone 128GB RAM</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$55.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-3.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Smart Phone 128GB RAM</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$55.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-4.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">Smart Phone 128GB RAM</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$55.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-5.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">22 Inch LED Display</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$65.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-2.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">22 Inch LED Display</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$65.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-item hover-effect-slide">
+                <div class="image-holder position-relative">
+                  <a href="single-product.html">
+                    <img
+                      src="assets/images/post-thumbnail-3.jpg"
+                      alt="categories"
+                      class="product-image img-fluid"
+                    />
+                  </a>
+                  <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                    >Buy Now</a
+                  >
+                </div>
+                <div
+                  class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+                >
+                  <h5 class="fs-5 mt-3 mb-5">
+                    <a href="single-product.html">22 Inch LED Display</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Buy Now"
+                    ><span>$65.00</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div
         class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3"
@@ -190,10 +1709,11 @@
       </div>
     </div>
 
-    <div id="products" class="container">
-      <div class="container-fuild">
-        <div class="row mt-5">
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+    <!-- Our new product -->
+    <div id="Collections" class="container">
+      <div class="row">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+          <div class="col mb-3">
             <div class="card bg-black border">
               <img
                 src="assets/images/product-small-1.jpg"
@@ -202,12 +1722,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">Sony HXR - NX200</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">Sony HXR - NX200</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4 px-4"
                   >
-                    <p>-100$</p>
+                    <p class="text-decoration-line-through">1200$</p>
                     <p class="fs-3 text-danger">1000$</p>
                   </div>
                 </div>
@@ -219,7 +1739,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div class="col mb-3">
             <div class="card bg-black border">
               <img
                 src="assets/images/product-small-2.jpg"
@@ -228,12 +1748,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">Canon EOS C100</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">Canon EOS C100</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4 px-4"
                   >
-                    <p>-300$</p>
+                    <p class="text-decoration-line-through">3800$</p>
                     <p class="fs-3 text-danger">3500$</p>
                   </div>
                 </div>
@@ -245,7 +1765,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div class="col">
             <div class="card bg-black border bg-">
               <img
                 src="assets/images/product-small-3.jpg"
@@ -254,12 +1774,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">Sony Loop - NZ500</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">Sony Loop - NZ500</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4 px-4"
                   >
-                    <p>-40$</p>
+                    <p class="text-decoration-line-through">700$</p>
                     <p class="fs-3 text-danger">500$</p>
                   </div>
                 </div>
@@ -271,7 +1791,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div class="col mb-3">
             <div class="card bg-black border">
               <img
                 src="assets/images/product-small-4.jpg"
@@ -280,12 +1800,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">Sony HXR - NX200</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">Sony HXR - NX200</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4 px-4"
                   >
-                    <p>-100$</p>
+                    <p class="text-decoration-line-through">1300$</p>
                     <p class="fs-3 text-danger">1000$</p>
                   </div>
                 </div>
@@ -297,7 +1817,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div class="col mb-3">
             <div class="card bg-black border">
               <img
                 src="assets/images/product-small-5.jpg"
@@ -306,12 +1826,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">Watch - NX200</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">Watch - NX200</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4"
                   >
-                    <p>-100$</p>
+                    <p class="text-decoration-line-through">1100$</p>
                     <p class="fs-3 text-danger">1000$</p>
                   </div>
                 </div>
@@ -323,7 +1843,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div class="col mb-3">
             <div class="card bg-black border">
               <img
                 src="assets/images/prd1.jpg"
@@ -332,12 +1852,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">Ipad Air</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">Ipad Air</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4"
                   >
-                    <p>-100$</p>
+                    <p class="text-decoration-line-through">1000$</p>
                     <p class="fs-3 text-danger">800$</p>
                   </div>
                 </div>
@@ -349,7 +1869,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div class="col">
             <div class="card bg-black border bg-">
               <img
                 src="assets/images/prd2.jpg"
@@ -358,12 +1878,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">Fast charger</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">Fast charger</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4"
                   >
-                    <p>-2$</p>
+                    <p class="text-decoration-line-through">20$</p>
                     <p class="fs-3 text-danger">12$</p>
                   </div>
                 </div>
@@ -375,7 +1895,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+          <div class="col mb-3">
             <div class="card bg-black border">
               <img
                 src="assets/images/prd3.jpg"
@@ -384,12 +1904,12 @@
                 style="height: auto; width: auto"
               />
               <div class="card-body pb-0">
-                <h5 class="card-title mb-4">NIKON D570 BODY</h5>
+                <h5 class="card-title mb-4 pt-3 ps-2">NIKON D570 BODY</h5>
                 <div class="row">
                   <div
-                    class="col-12 d-flex justify-content-between align-items-center"
+                    class="col-12 d-flex justify-content-between align-items-center px-4"
                   >
-                    <p>-100$</p>
+                    <p class="text-decoration-line-through">240$</p>
                     <p class="fs-3 text-danger">200$</p>
                   </div>
                 </div>
@@ -405,11 +1925,89 @@
       </div>
     </div>
 
+    <!-- Best of seller -->
     <hr class="m-5" />
     <div id="Collections" class="container">
       <div class="row">
-        <p class="fs-1">Best of seller</p>
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <p class="fs-1">Best of seller</p>
+          <a href="" class="btn-2">View More</a>
+        </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+          <div class="col">
+            <div class="product-item hover-effect-slide">
+              <div class="image-holder position-relative">
+                <a href="single-product.html">
+                  <img
+                    src="./assets/images/post-thumbnail-4.jpg"
+                    alt="categories"
+                    class="product-image img-fluid"
+                  />
+                </a>
+                <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                  >Buy Now</a
+                >
+              </div>
+              <div
+                class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+              >
+                <h5 class="fs-5 mt-3 mb-5">
+                  <a href="single-product.html">Phone Cover 5.6 inches</a>
+                </h5>
+                <span>$95.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product-item hover-effect-slide">
+              <div class="image-holder position-relative">
+                <a href="single-product.html">
+                  <img
+                    src="assets/images/post-thumbnail-5.jpg"
+                    alt="categories"
+                    class="product-image img-fluid"
+                  />
+                </a>
+                <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                  >Buy Now</a
+                >
+              </div>
+              <div
+                class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+              >
+                <h5 class="fs-5 mt-3 mb-5">
+                  <a href="single-product.html">Phone Cover 5.6 inches</a>
+                </h5>
+                <span>$95.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product-item hover-effect-slide">
+              <div class="image-holder position-relative">
+                <a href="single-product.html">
+                  <img
+                    src="assets/images/post-thumbnail-1.jpg"
+                    alt="categories"
+                    class="product-image img-fluid"
+                  />
+                </a>
+                <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                  >Buy Now</a
+                >
+              </div>
+              <div
+                class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+              >
+                <h5 class="fs-5 mt-3 mb-5">
+                  <a href="single-product.html">Phone Cover 5.6 inches</a>
+                </h5>
+                <span>$95.00</span>
+              </div>
+            </div>
+          </div>
           <div class="col">
             <div class="product-item hover-effect-slide">
               <div class="image-holder position-relative">
@@ -538,13 +2136,1543 @@
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="product-item hover-effect-slide">
+              <div class="image-holder position-relative">
+                <a href="single-product.html">
+                  <img
+                    src="assets/images/post-thumbnail-2.jpg"
+                    alt="categories"
+                    class="product-image img-fluid"
+                  />
+                </a>
+                <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                  >Buy Now</a
+                >
+              </div>
+              <div
+                class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+              >
+                <h5 class="fs-5 mt-3 mb-5">
+                  <a href="single-product.html">22 Inch LED Display</a>
+                </h5>
+                <a href="#" class="text-decoration-none" data-after="Buy Now"
+                  ><span>$65.00</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product-item hover-effect-slide">
+              <div class="image-holder position-relative">
+                <a href="single-product.html">
+                  <img
+                    src="assets/images/post-thumbnail-3.jpg"
+                    alt="categories"
+                    class="product-image img-fluid"
+                  />
+                </a>
+                <a href="#" class="btn btn-danger w-100 mt-2 rounded-1"
+                  >Buy Now</a
+                >
+              </div>
+              <div
+                class="product-content d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+              >
+                <h5 class="fs-5 mt-3 mb-5">
+                  <a href="single-product.html">22 Inch LED Display</a>
+                </h5>
+                <a href="#" class="text-decoration-none" data-after="Buy Now"
+                  ><span>$65.00</span></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <hr class="m-5" />
 
-    <section id="newsletter" class="m-5 p-4">
-      <div class="container">
+    <div id="Collections" class="container">
+      <div class="row">
+        <p class="fs-1">New Products</p>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-1.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Iphone 14 Pro Max Limited - Black Galaxy Color
+                </h5>
+                <p class="card-text">$790.50</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border px-2 pt-2 icon-hover"
+                    ><i class="fas fa-heart fa-lg text-danger px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-2.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Xiaomi Ultra 20, Black Color EOS 2000
+                </h5>
+                <p class="card-text">$320.00</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border px-2 pt-2 icon-hover"
+                    ><i class="fas fa-heart fa-lg text-light px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-3.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Headphone Original Global Version 4GB
+                </h5>
+                <p class="card-text">$120.00</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border px-2 pt-2 icon-hover"
+                    ><i class="fas fa-heart fa-lg text-danger px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-4.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Combo Ultra Change iPhone 12 Pro 6.1 Limited
+                </h5>
+                <p class="card-text">$120.00</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border px-2 pt-2 icon-hover"
+                    ><i class="fas fa-heart fa-lg text-light px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-5.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  TV Ultra Series 1 Sport Case 38mm Black
+                </h5>
+                <p class="card-text">$790.50</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border px-2 pt-2 icon-hover"
+                    ><i class="fas fa-heart fa-lg text-danger px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-6.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  PenMac Version 10.1 Blackbuilt Global Ultra
+                </h5>
+                <p class="card-text">$120.00</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border px-2 pt-2 icon-hover"
+                    ><i class="fas fa-heart fa-lg text-danger px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-7.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Ipad Gaming Headset 32db Blackbuilt in mic
+                </h5>
+                <p class="card-text">$99.50</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border icon-hover px-2 pt-2"
+                    ><i class="fas fa-heart fa-lg text-danger px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 my-2 shadow-2-strong bg-dark">
+              <img
+                src="./assets/images/product-thumbnail-8.jpg"
+                class="card-img-top"
+                style="aspect-ratio: 1 / 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Screen 1000hz Gaming Headset 32db Blackbuilt
+                </h5>
+                <p class="card-text">$120.00</p>
+                <div
+                  class="card-footer d-flex justify-content-center align-items-end pt-3 px-0 pb-0 mt-auto"
+                >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >View</a
+                  >
+                  <a href="#!" class="btn btn-outline-danger shadow-0 me-1"
+                    >Add</a
+                  >
+                  <a href="#!" class="btn border px-2 pt-2 icon-hover"
+                    ><i class="fas fa-heart fa-lg text-light px-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More details -->
+
+    <div id="new" class="container-fluid populer-news pt-4">
+      <div class="container pt-5">
+        <div class="tab-class mb-4">
+          <div class="row g-4">
+            <div class="col-lg-8 col-xl-9">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-md-between border-bottom mb-4"
+              >
+                <h1 class="mb-4">Tet holiday program</h1>
+              </div>
+              <div class="tab-content mb-4">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                  <div class="row g-4">
+                    <div class="col-lg-8">
+                      <div class="position-relative rounded overflow-hidden">
+                        <img
+                          src="./assets/images/bn-1.jpg"
+                          class="img-zoomin img-fluid rounded w-100"
+                          alt=""
+                        />
+                        <div
+                          class="position-absolute text-white px-3 py-2 bg-danger rounded-circle"
+                          style="top: 20px; right: 20px"
+                        >
+                          - 20%
+                        </div>
+                      </div>
+                      <div class="my-4">
+                        <a href="#" class="h4"
+                          >Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.</a
+                        >
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-clock"></i> 06 minute read</a
+                        >
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-eye"></i> 3.5k Views</a
+                        >
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-comment-dots"></i> 05 Comment</a
+                        >
+                        <a href="#" class=""
+                          ><i class="fa fa-arrow-up"></i> 1.5k Share</a
+                        >
+                      </div>
+                      <p class="my-4">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy Lorem Ipsum has been the
+                        industry's standard dummy..
+                      </p>
+                      <br /><br />
+                      <div class="position-relative rounded overflow-hidden">
+                        <img
+                          src="./assets/images/bn-2.jpg"
+                          class="img-zoomin img-fluid rounded w-100"
+                          alt=""
+                        />
+                        <div
+                          class="position-absolute text-white px-3 py-2 bg-danger rounded-circle"
+                          style="top: 20px; right: 20px"
+                        >
+                          - 20%
+                        </div>
+                      </div>
+                      <div class="my-4">
+                        <a href="#" class="h4"
+                          >Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.</a
+                        >
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-clock"></i> 06 minute read</a
+                        >
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-eye"></i> 3.5k Views</a
+                        >
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-comment-dots"></i> 05 Comment</a
+                        >
+                        <a href="#" class=""
+                          ><i class="fa fa-arrow-up"></i> 1.5k Share</a
+                        >
+                      </div>
+                      <p class="my-4">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy Lorem Ipsum has been the
+                        industry's standard dummy..
+                      </p>
+                      <br />
+                      <br />
+                      <div class="position-relative rounded overflow-hidden">
+                        <img
+                          src="./assets/images/bn-3.jpg"
+                          class="img-zoomin img-fluid rounded w-100"
+                          alt=""
+                        />
+                        <div
+                          class="position-absolute text-white px-3 py-2 bg-danger rounded-circle"
+                          style="top: 20px; right: 20px"
+                        >
+                          - 20%
+                        </div>
+                      </div>
+                      <div class="my-4">
+                        <a href="#" class="h4"
+                          >Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.</a
+                        >
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-clock"></i> 06 minute read</a
+                        >
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-eye"></i> 3.5k Views</a
+                        >
+                        <a href="#" class="me-3"
+                          ><i class="fa fa-comment-dots"></i> 05 Comment</a
+                        >
+                        <a href="#" class=""
+                          ><i class="fa fa-arrow-up"></i> 1.5k Share</a
+                        >
+                      </div>
+                      <p class="my-4">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy Lorem Ipsum has been the
+                        industry's standard dummy..
+                      </p>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="row g-4">
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-1.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-2.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-3.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-1.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-4.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-5.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Magazine</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-1.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-1.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="./assets/images/product-small-5.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Magazine</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-2" class="tab-pane fade show p-0">
+                  <div class="row g-4">
+                    <div class="col-lg-8">
+                      <div class="position-relative rounded overflow-hidden">
+                        <img
+                          src="img/news-1.jpg"
+                          class="img-zoomin img-fluid rounded w-100"
+                          alt=""
+                        />
+                        <div
+                          class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                          style="top: 20px; right: 20px"
+                        >
+                          Magazine
+                        </div>
+                      </div>
+                      <div class="my-3">
+                        <a href="#" class="h4"
+                          >Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.</a
+                        >
+                      </div>
+                      <p class="mt-4">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy Lorem Ipsum has been the
+                        industry's standard dummy..
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-clock"></i> 06 minute read</a
+                        >
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-eye"></i> 3.5k Views</a
+                        >
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-comment-dots"></i> 05 Comment</a
+                        >
+                        <a href="#" class="text-dark link-hover"
+                          ><i class="fa fa-arrow-up"></i> 1.5k Share</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="row g-4">
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-3.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Magazine</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-4.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Magazine</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-5.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Magazine</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-6.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Magazine</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-7.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Magazine</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-3" class="tab-pane fade show p-0">
+                  <div class="row g-4">
+                    <div class="col-lg-8">
+                      <div class="position-relative rounded overflow-hidden">
+                        <img
+                          src="img/news-1.jpg"
+                          class="img-zoomin img-fluid rounded w-100"
+                          alt=""
+                        />
+                        <div
+                          class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                          style="top: 20px; right: 20px"
+                        >
+                          Politics
+                        </div>
+                      </div>
+                      <div class="my-3">
+                        <a href="#" class="h4"
+                          >Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.</a
+                        >
+                      </div>
+                      <p class="mt-4">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy Lorem Ipsum has been the
+                        industry's standard dummy..
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-clock"></i> 06 minute read</a
+                        >
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-eye"></i> 3.5k Views</a
+                        >
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-comment-dots"></i> 05 Comment</a
+                        >
+                        <a href="#" class="text-dark link-hover"
+                          ><i class="fa fa-arrow-up"></i> 1.5k Share</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="row g-4">
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-3.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Politics</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-4.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Politics</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-5.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Politics</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-6.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Politics</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-7.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Politics</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-4" class="tab-pane fade show p-0">
+                  <div class="row g-4">
+                    <div class="col-lg-8">
+                      <div class="position-relative rounded overflow-hidden">
+                        <img
+                          src="img/news-1.jpg"
+                          class="img-zoomin img-fluid rounded w-100"
+                          alt=""
+                        />
+                        <div
+                          class="position-absolute text-white px-4 py-2 bg-primary rounded"
+                          style="top: 20px; right: 20px"
+                        >
+                          Technology
+                        </div>
+                      </div>
+                      <div class="my-3">
+                        <a href="#" class="h4"
+                          >Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.</a
+                        >
+                      </div>
+                      <p class="mt-4">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy Lorem Ipsum has been the
+                        industry's standard dummy
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-clock"></i> 06 minute read</a
+                        >
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-eye"></i> 3.5k Views</a
+                        >
+                        <a href="#" class="text-dark link-hover me-3"
+                          ><i class="fa fa-comment-dots"></i> 05 Comment</a
+                        >
+                        <a href="#" class="text-dark link-hover"
+                          ><i class="fa fa-arrow-up"></i> 1.5k Share</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="row g-4">
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-3.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-4.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-5.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-6.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row g-4 align-items-center">
+                            <div class="col-5">
+                              <div class="overflow-hidden rounded">
+                                <img
+                                  src="img/news-7.jpg"
+                                  class="img-zoomin img-fluid rounded w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Technology</p>
+                                <a href="#" class="h6"
+                                  >Get the best speak market, news.</a
+                                >
+                                <small class="d-block"
+                                  ><i
+                                    class="fas fa-calendar-alt me-1 text-white"
+                                  ></i>
+                                  Dec 9, 2024</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-3">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="p-3 rounded border">
+                    <h4 class="mb-4">Stay Connected</h4>
+                    <div class="row g-4">
+                      <div class="col-12">
+                        <a
+                          href="#"
+                          class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2"
+                        >
+                          <i class="fa-brands fa-facebook fa-lg me-2"></i>
+                          <span class="text-white">13,977 Followers</span>
+                        </a>
+                        <a
+                          href="#"
+                          class="w-100 rounded btn btn-danger d-flex align-items-center p-3 mb-2"
+                        >
+                          <i class="fa-brands fa-youtube fa-lg me-2"></i>
+                          <span class="text-white">21,798 Followers</span>
+                        </a>
+                        <a
+                          href="#"
+                          class="w-100 rounded btn btn-danger d-flex align-items-center p-3 mb-2"
+                        >
+                          <i class="fa-brands fa-instagram fa-lg me-2"></i>
+                          <span class="text-white">7,999 Subscriber</span>
+                        </a>
+                        <a
+                          href="#"
+                          class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2"
+                        >
+                          <i class="fa-brands fa-github fa-lg me-2"></i>
+                          <span class="text-white">19,764 Follower</span>
+                        </a>
+                        <a
+                          href="#"
+                          class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2"
+                        >
+                          <i class="fa-brands fa-tiktok fa-lg me-2"></i>
+                          <span class="text-white">31,999 Subscriber</span>
+                        </a>
+                        <a
+                          href="#"
+                          class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-4"
+                        >
+                          <i class="fa-brands fa-linkedin-in fa-lg me-2"></i>
+                          <span class="text-white">37,999 Subscriber</span>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="my-4">Comments</h4>
+                    <div class="row g-4">
+                      <div class="col-12">
+                        <div class="row g-4 align-items-center features-item">
+                          <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                              <div class="overflow-hidden rounded-circle">
+                                <img
+                                  src="./assets/images/cmt-1.jpg"
+                                  class="img-zoomin img-fluid rounded-circle w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                              <p class="text-uppercase mb-2">Huyen</p>
+                              <a href="#" class="h6"> Unbeliverble!!! </a>
+                              <small class="d-block text-white"
+                                ><i
+                                  class="fas fa-calendar-alt me-1 text-white"
+                                ></i>
+                                December 9, 2024</small
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row g-4 align-items-center features-item">
+                          <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                              <div class="overflow-hidden rounded-circle">
+                                <img
+                                  src="./assets/images/cmt-2.jpg"
+                                  class="img-zoomin img-fluid rounded-circle w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                              <p class="text-uppercase mb-2">Linh</p>
+                              <a href="#" class="h6">
+                                I bought five iphone 14 pro max
+                              </a>
+                              <small class="d-block text-white"
+                                ><i
+                                  class="fas fa-calendar-alt me-1 text-white"
+                                ></i>
+                                December 9, 2024</small
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row g-4 align-items-center features-item">
+                          <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                              <div class="overflow-hidden rounded-circle">
+                                <img
+                                  src="./assets/images/cmt-3.jpg"
+                                  class="img-zoomin img-fluid rounded-circle w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                              <p class="text-uppercase mb-2">ManChester</p>
+                              <a href="#" class="h6">
+                                Get the best speak market, news.
+                              </a>
+                              <small class="d-block text-white"
+                                ><i
+                                  class="fas fa-calendar-alt me-1 text-white"
+                                ></i>
+                                December 9, 2024</small
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row g-4 align-items-center features-item">
+                          <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                              <div class="overflow-hidden rounded-circle">
+                                <img
+                                  src="./assets/images/cmt4.jpg"
+                                  class="img-zoomin img-fluid rounded-circle w-100"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                              <p class="text-uppercase mb-2">Hoan</p>
+                              <a href="#" class="h6"> Niceeeee💗💗💗 </a>
+                              <small class="d-block text-white"
+                                ><i
+                                  class="fas fa-calendar-alt me-1 text-white"
+                                ></i>
+                                December 9, 2024</small
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <a
+                          href="#"
+                          class="link-hover btn btn-outline-danger rounded-pill w-100 py-3 mb-4"
+                          >View More</a
+                        >
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="border-bottom my-3 pb-3">
+                          <h4 class="mb-0">Trending Tags</h4>
+                        </div>
+                        <ul
+                          class="nav nav-pills d-inline-flex text-center mb-4"
+                        >
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >Lifestyle</span
+                              >
+                            </a>
+                          </li>
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >Technology</span
+                              >
+                            </a>
+                          </li>
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >Politics</span
+                              >
+                            </a>
+                          </li>
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >Magazine</span
+                              >
+                            </a>
+                          </li>
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >Game</span
+                              >
+                            </a>
+                          </li>
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >Movie</span
+                              >
+                            </a>
+                          </li>
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >Travel</span
+                              >
+                            </a>
+                          </li>
+                          <li class="nav-item mb-3">
+                            <a
+                              class="d-flex py-2 bg-light rounded-pill me-2"
+                              href="#"
+                            >
+                              <span
+                                class="text-dark link-hover"
+                                style="width: 90px"
+                                >World</span
+                              >
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="position-relative banner-2">
+                          <img
+                            src="img/banner-2.jpg"
+                            class="img-fluid w-100 rounded"
+                            alt=""
+                          />
+                          <div class="text-center banner-content-2">
+                            <h6 class="mb-2">The Most Populer</h6>
+                            <p class="text-white mb-2">
+                              News &amp; Magazine WP Theme
+                            </p>
+                            <a href="#" class="btn btn-primary text-white px-4"
+                              >Shop Now</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <section id="newsletter" class="my-5">
+      <div class="container my-5">
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
@@ -573,256 +3701,105 @@
     </section>
     <hr />
 
-    <footer id="footer" class="bg-black">
-      <div class="container-fluid">
-        <div class="row d-flex flex-wrap justify-content-between my-5 py-5">
-          <div class="col-md-3 col-sm-6">
-            <p class="fs-1">TechStore</p>
-            <p>
-              Gravida massa volutpat aenean odio. Amet, turpis erat nullam
-              fringilla elementum diam in. Nisi, purus vitae, ultrices nunc. Sit
-              ac sit suscipit hendrerit.
-            </p>
-          </div>
-          <div class="col-md-2 col-sm-6">
-            <div class="footer-menu footer-menu-002">
-              <h5 class="widget-title mb-4">Quick Links</h5>
-              <ul class="menu-list list-unstyled fs-6">
-                <li class="menu-item">
-                  <a href="index.html" class="item-anchor">Home</a>
-                </li>
-                <li class="menu-item">
-                  <a href="shop-four-column-wide.html" class="item-anchor"
-                    >About</a
-                  >
-                </li>
-                <li class="menu-item">
-                  <a href="blog.html" class="item-anchor">Services</a>
-                </li>
-                <li class="menu-item">
-                  <a href="styles.html" class="item-anchor">Single item</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="item-anchor">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-6">
-            <div class="footer-menu footer-menu-002">
-              <h5 class="widget-title mb-4">About</h5>
-              <ul class="menu-list list-unstyled fs-6">
-                <li class="menu-item">
-                  <a href="index.html" class="item-anchor">How it works</a>
-                </li>
-                <li class="menu-item">
-                  <a href="shop-four-column-wide.html" class="item-anchor"
-                    >About</a
-                  >
-                </li>
-                <li class="menu-item">
-                  <a href="blog.html" class="item-anchor">Our packages</a>
-                </li>
-                <li class="menu-item">
-                  <a href="styles.html" class="item-anchor">Promotions</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="item-anchor">Refer a friend</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-6">
-            <div class="footer-menu footer-menu-003">
-              <h5 class="widget-title mb-4">Help &amp; Info</h5>
-              <ul class="menu-list list-unstyled fs-6">
-                <li class="menu-item">
-                  <a href="#" class="item-anchor">Track Your Order</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="item-anchor">Returns + Exchanges</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="item-anchor">Shipping + Delivery</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="item-anchor">Contact Us</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="item-anchor">Find us easy</a>
-                </li>
-                <li class="menu-item">
-                  <a href="faqs.html" class="item-anchor">Faqs</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="footer-menu footer-menu-004 border-animation-left">
-              <h5 class="widget-title mb-4">Contact Us</h5>
-              <p>
-                Do you have any questions or suggestions?
-                <a href="mailto:contact@yourcompany.com" class="item-anchor"
-                  >contact@yourcompany.com</a
+    <section class="py-0 pt-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 class="lh-lg fw-bold text-1000">Company Info</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!">About Us</a>
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!">Affiliate</a>
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >Fashion Blogger</a
                 >
-              </p>
-              <p>
-                Do you need support? Give us a call.
-                <a href="tel:+43 720 11 52 78" class="item-anchor"
-                  >+43 720 11 52 78</a
-                >
-              </p>
-            </div>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="border-top py-4">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                © Copyright 2023 TechStore. All rights reserved. HTML Template
-                by
-                <a
-                  class="fs-5"
-                  href="https://templatesjungle.com"
-                  target="_blank"
-                  >Bootstrap</a
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 class="lh-lg fw-bold text-1000">Help &amp; Support</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >Shipping Info</a
                 >
-              </p>
-            </div>
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!">Refunds</a>
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >How to Order</a
+                >
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >How to Track</a
+                >
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >Size Guides</a
+                >
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="modal-custom hidden">
-      <div class="overlay"></div>
-      <div class="modal-body-custom">
-        <button class="btn--close-modal">&times;</button>
-        <div class="">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="">
-              <div class="card bg-black text-white" style="border-radius: 1rem">
-                <div class="card-body text-center">
-                  <div class="mb-md-5 mt-md-4 pb-2">
-                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                    <p class="text-white-50 mb-5">
-                      Please enter your login and password!
-                    </p>
-
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label mt-1" for="typeEmailX"
-                        >Email</label
-                      >
-                      <input
-                        type="email"
-                        id="typeEmailX"
-                        class="form-control form-control-lg"
-                      />
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                      <input
-                        type="password"
-                        id="typePasswordX"
-                        class="form-control form-control-lg"
-                      />
-                      <label class="form-label mt-1" for="typePasswordX"
-                        >Password</label
-                      >
-                    </div>
-
-                    <p class="small mb-4 pb-lg-2">
-                      <a class="text-white-50" href="#!">Forgot password?</a>
-                    </p>
-
-                    <button class="btn btn-outline-light btn-lg" type="submit">
-                      Login
-                    </button>
-                  </div>
-                  <div>
-                    <p class="mb-0">
-                      Don't have an account?
-                      <a
-                        href="#modal-custom-register"
-                        class="text-white-50 fw-bold"
-                        >Register</a
-                      >
-                    </p>
-                  </div>
-                </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 class="lh-lg fw-bold text-1000">Customer Care</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >Payment Methods</a
+                >
+              </li>
+              <li class="lh-lg">
+                <a class="text-800 text-decoration-none" href="#!"
+                  >Bonus Point</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-auto ms-auto">
+            <h5 class="lh-lg fw-bold text-1000">
+              Do you want to write something about us?
+            </h5>
+            <div class="row input-group-icon mb-5">
+              <div class="col-12">
+                <input
+                  class="form-control input-box"
+                  type="email"
+                  placeholder="Write somthing ..."
+                  aria-label="email"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="modal-custom hidden">
-      <div class="overlay"></div>
-      <div class="modal-body-custom">
-        <button class="btn--close-modal">&times;</button>
-        <div class="">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="">
-              <div class="card bg-black text-white" style="border-radius: 1rem">
-                <div class="card-body text-center">
-                  <div class="mb-md-5 mt-md-4 pb-2">
-                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                    <p class="text-white-50 mb-5">
-                      Please enter your login and password!
-                    </p>
-
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label mt-1" for="typeEmailX"
-                        >Email</label
-                      >
-                      <input
-                        type="email"
-                        id="typeEmailX"
-                        class="form-control form-control-lg"
-                      />
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label mt-1" for="typePasswordX"
-                        >Password</label
-                      >
-                      <input
-                        type="password"
-                        id="typePasswordX"
-                        class="form-control form-control-lg"
-                      />
-                    </div>
-
-                    <p class="small mb-4 pb-lg-2">
-                      <a class="text-white-50" href="#!">Forgot password?</a>
-                    </p>
-                    <button class="btn btn-outline-light btn-lg" type="submit">
-                      Login
-                    </button>
-                  </div>
-                  <hr />
-                  <div>
-                    <p class="mb-0">
-                      Don't have an account?
-                      <a
-                        href="./assets/Sign up/signup.html"
-                        class="text-white-50 fw-bold"
-                        >Register</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="container-fluid row flex-center my-3">
+        <hr />
+        <div class="col-md-6 order-1 order-md-0">
+          <p class="my-2 text-1000 text-center text-md-start">
+            CopyRight 2024 ElectoStore. All rights reserved.
+          </p>
         </div>
       </div>
-    </div>
-
-    <script src="js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
+      <!-- end of .container-->
+    </section>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- <script src="./js/s"></script> -->
   </body>
 </html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-transparent">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fs-1" href="index.html"
+          >Electo<span class="text-danger">Store</span></a
+        >
+        <!-- Toggle btn -->
+        <button
+          class="navbar-toggler shadow-0 border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar -->
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NavBar</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- sidebarBody -->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul
+              class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-2 me-3 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home<i class="fa-solid fa-house ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-2 me-3" href="#product"
+                  >Products<i class="fa-solid fa-laptop ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#new" class="nav-link btn-2 me-3"
+                  >News<i class="fa-regular fa-newspaper ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-2 me-3 active"
+                  aria-current="page"
+                  href="#contact"
+                  >Contact<i class="fa-solid fa-phone ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-2 me-3 active"
+                  aria-current="page"
+                  href="shoppingCard.html"
+                  >Shopping Card<i class="fa-solid fa-cart-shopping ms-1"></i
+                ></a>
+              </li>
+            </ul>
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+            >
+              <a href="payMethod.html" class="btn-2">PayMent</a>
+              <a
+                href=""
+                class="login-button text-white btn px-3 py-1 bg-danger rounded-4"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid topbar-top bg-dark mt-1">
+      <div class="container">
+        <div class="d-flex justify-content-between topbar py-2">
+          <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+            <a href="#" class="me-4 text-secondary"
+              ><i class="fas fa-map-marker-alt me-2 text-white"></i>79 Nguỵ Như
+              Kon Tum
+            </a>
+            <a href="#" class="me-4 text-secondary"
+              ><i class="fas fa-phone-alt me-2 text-white"></i>+84 12345678</a
+            >
+            <a href="#" class="text-secondary"
+              ><i class="fas fa-envelope me-2 text-white"></i>Email@gmail.com</a
+            >
+          </div>
+          <div class="text-end pe-4 me-4 border-end border-white search-btn">
+            <div class="search-form">
+              <form method="post" action="index.html">
+                <div class="form-group">
+                  <div class="d-flex">
+                    <input
+                      type="search"
+                      class="form-control border-0 rounded-pill"
+                      name="search-input"
+                      value=""
+                      placeholder="Search Here"
+                      required=""
+                    />
+                    <button type="submit" value="Search Now!" class="btn">
+                      <i class="fa fa-search text-white"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center topbar-icon"
+          >
+            <a href="#" class="me-4"
+              ><i class="fab fa-facebook-f text-white"></i
+            ></a>
+            <a href="#" class="me-4"
+              ><i class="fab fa-twitter text-white"></i
+            ></a>
+            <a href="#" class="me-4"
+              ><i class="fab fa-instagram text-white"></i
+            ></a>
+            <a href="#" class=""
+              ><i class="fab fa-linkedin-in text-white"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div
+            class="modal fade"
+            id="exampleModalToggle"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-black p-4 border">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4" id="exampleModalToggleLabel">
+                    Login
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="form-outline mt-2 mb-4">
+                  <label class="form-label" for="form2Example1" type="dasds"
+                    >Email address</label
+                  >
+                  <input type="email" id="form2Example1" class="form-control" />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form2Example2">Password</label>
+                  <input
+                    type="password"
+                    id="form2Example2"
+                    class="form-control"
+                  />
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="form2Example31"
+                        checked
+                      />
+                      <label class="form-check-label" for="form2Example31">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
+                  </div>
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-block mb-3"
+                >
+                  Sign in
+                </button>
+                <div class="text-center">
+                  <p class="mb-1">or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github text-white"></i>
+                  </button>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <p>
+                    Not a member?
+                    <a
+                      class="text-danger"
+                      href="#"
+                      data-bs-target="#exampleModalToggle2"
+                      data-bs-toggle="modal"
+                      >Register</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="exampleModalToggle2"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-black p-4 border">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4" id="exampleModalToggleLabel">
+                    Register
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="form-outline mt-2 mb-4">
+                  <label class="form-label" for="form2Example1" type="dasds"
+                    >Email address</label
+                  >
+                  <input type="email" id="form2Example1" class="form-control" />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form2Example2">Password</label>
+                  <input
+                    type="password"
+                    id="form2Example2"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form2Example2"
+                    >Repeat Password</label
+                  >
+                  <input
+                    type="password"
+                    id="form2Example2"
+                    class="form-control"
+                  />
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-block mb-3"
+                >
+                  Create Account
+                </button>
+                <div class="text-center">
+                  <p class="mb-1">or register with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter text-white"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github text-white"></i>
+                  </button>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <p>
+                    Already have an account?
+                    <a
+                      class="text-danger"
+                      href="#"
+                      data-bs-target="#exampleModalToggle"
+                      data-bs-toggle="modal"
+                      >Login</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- card header -->
+    <div class="container my-5">
+      <div class="card">
+        <div
+          class="bg-holder d-none d-lg-block bg-card"
+          style="
+            background-image: url(../../../assets/img/icons/spot-illustrations/corner-4.png);
+            opacity: 0.7;
+          "
+        ></div>
+        <!--/.bg-holder-->
+        <div class="card-body position-relative bg-black">
+          <h5>Order Details: #2737</h5>
+          <p class="fs--1">April 21, 2019, 5:33 PM</p>
+          <div>
+            <strong class="me-2">Status: </strong>
+            <div class="badge rounded-pill badge-subtle-success fs--2">
+              Completed
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card mb -->
+    <div class="container">
+      <div class="card mb-3">
+        <div class="card-body bg-black">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <h5 class="mb-3 fs-0">Billing Address</h5>
+              <h6 class="mb-2">Bui Duy Hoan</h6>
+              <p class="mb-1 fs--1">
+                79 Nguy Nhu Kon Tum<br />Thanh Xuan, Nhan Chinh, Ha Noi
+              </p>
+              <p class="mb-0 fs--1">
+                <strong>Email: </strong
+                ><a href="mailto:ricky@gmail.com">Email@example.com</a>
+              </p>
+              <p class="mb-0 fs--1">
+                <strong>Phone: </strong
+                ><a href="tel:+84 1234456789">+84 1234456789</a>
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <h5 class="mb-3 fs-0">Shipping Address</h5>
+              <h6 class="mb-2">Bui Duy Hoan</h6>
+              <p class="mb-0 fs--1">
+                79 Nguy Nhu Kon Tum<br />Thanh Xuan, Nhan Chinh, Ha Noi
+              </p>
+              <div class="text-500 fs--1">(Free Shipping)</div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <h5 class="mb-3 fs-0">Payment Method</h5>
+              <div class="d-flex">
+                <img
+                  class="me-3"
+                  src="./assets/images/visa.png"
+                  width="40"
+                  height="30"
+                  alt=""
+                />
+                <div class="flex-1">
+                  <h6 class="mb-0">Bui Duy Hoan</h6>
+                  <p class="mb-0 fs--1">**** **** **** 9809</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card body  -->
+    <div class="container my-5">
+      <div class="card mb-3">
+        <div class="card-body bg-black">
+          <div class="table-responsive fs--1">
+            <table class="table table-striped border-bottom text-white">
+              <thead class="bg-200">
+                <tr>
+                  <th class="text-900 border-0">Products</th>
+                  <th class="text-900 border-0 text-center">Quantity</th>
+                  <th class="text-900 border-0 text-end">Rate</th>
+                  <th class="text-900 border-0 text-end">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-200">
+                  <td class="text-white">
+                    <h6 class="mb-0 text-nowrap">
+                      PenMac Version 10.1 Blackbuilt Global Ultra
+                    </h6>
+                    <p class="mb-0">Down 35mb, Up 100mb</p>
+                  </td>
+                  <td class="text-white text-center">2</td>
+                  <td class="text-white text-end">$65.00</td>
+                  <td class="text-white text-end">$130.00</td>
+                </tr>
+                <tr class="border-200">
+                  <td class="text-white">
+                    <h6 class="mb-0 text-nowrap">
+                      Xiaomi Ultra 20, Black Color EOS 2000
+                    </h6>
+                    <p class="mb-0">
+                      Includes basic wireframes and responsive templates
+                    </p>
+                  </td>
+                  <td class="text-white text-center">1</td>
+                  <td class="text-white text-end">$2,100.00</td>
+                  <td class="text-white text-end">$2,100.00</td>
+                </tr>
+                <tr>
+                  <td class="text-white">
+                    <h6 class="mb-0 text-nowrap">
+                      Combo Ultra Change iPhone 12 Pro 6.1 Limited
+                    </h6>
+                    <p class="mb-0">Includes responsive navigation</p>
+                  </td>
+                  <td class="text-white text-center">8</td>
+                  <td class="text-white text-end">$5,00.00</td>
+                  <td class="text-white text-end">$4,000.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row g-0 justify-content-end">
+            <div class="col-auto">
+              <table class="table table-sm table-borderless fs--1 text-end">
+                <tbody class="text-white">
+                  <tr>
+                    <th class="text-900">Subtotal:</th>
+                    <td class="fw-semi-bold">$6,230.00</td>
+                  </tr>
+                  <tr>
+                    <th class="text-900">Tax 5%:</th>
+                    <td class="fw-semi-bold">$311.50</td>
+                  </tr>
+                  <tr class="border-top">
+                    <th class="text-900">Total:</th>
+                    <td class="fw-semi-bold">$6541.50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mb-5">
+
+     <!-- Footer -->
+     <section class="py-0 pt-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-2 mb-3">
+              <h5 class="lh-lg fw-bold text-1000">Company Info</h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!">About Us</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!">Affiliate</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Fashion Blogger</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5 class="lh-lg fw-bold text-1000">Help &amp; Support</h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Shipping Info</a
+                  >
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!">Refunds</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >How to Order</a
+                  >
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >How to Track</a
+                  >
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Size Guides</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5 class="lh-lg fw-bold text-1000">Customer Care</h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Payment Methods</a
+                  >
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Bonus Point</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-auto ms-auto">
+              <h5 class="lh-lg fw-bold text-1000">
+                Do you want to write something about us?
+              </h5>
+              <div class="row input-group-icon mb-5">
+                <div class="col-12">
+                  <input
+                    class="form-control input-box"
+                    type="email"
+                    placeholder="Write somthing ..."
+                    aria-label="email"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid row flex-center my-3">
+          <hr />
+          <div class="col-md-6 order-1 order-md-0">
+            <p class="my-2 text-1000 text-center text-md-start">
+              CopyRight 2024 ElectoStore. All rights reserved.
+            </p>
+          </div>
+        </div>
+      
+    <!-- script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
