@@ -1,0 +1,220 @@
+
+/* Begin main-banner */
+.main-banner {
+    background-image: url(../img/banner/banner-bg.jpg);
+    border-radius: 0px 0px 150px 150px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 225px 0px;
+}
+
+.main-banner .caption {
+    padding: 0 12px;
+}
+
+.main-banner .caption h6 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;        
+    color: #fff;
+}
+
+.main-banner .caption h2 {
+    position: relative;
+    font-size: 48px;
+    color: #fff;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.main-banner .caption h2:after {
+    position: absolute;
+    background-image: url(../img/banner/caption-dec.png);
+    width: 202px;
+    height: 12px;
+    content: '';
+    left: 112px;
+    bottom: 0;
+}
+
+.main-banner .caption p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    margin-bottom: 70px;
+}
+
+
+/* Begin Thanh tìm kiếm */
+.main-banner .search-input {
+
+}
+
+ #search {
+    max-width: 450px;
+}
+
+/* search section */
+.search-input #search {
+    position: relative;
+}
+
+.search-input .search-text {
+    max-width: 450px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 25px;
+    background-color: #fff;
+    border: none;
+    padding: 0px 25px;
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.search-input .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* End Thanh tìm kiếm */
+
+.main-banner .banner-img {
+    position: relative;
+}
+
+.main-banner .banner-img img {
+    border-radius: 25px;
+}
+
+.main-banner .banner-img .price {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 25px;
+    background-color: #008af8;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    padding: 4px 15px;
+}
+
+.main-banner .banner-img .offer{
+    position: absolute;
+    left: -25px;
+    bottom: -25px;
+    border-radius: 50%;
+    background-color: #ee626b;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+/* End main-banner */
+
+
+/* Begin feature */
+.feature {
+    margin-top: -80px;
+}
+
+.feature-item-container {
+    text-decoration: none;
+}
+
+.feature .item-icon:hover {
+    cursor: pointer;
+    background-color: #ee626b;
+}
+
+.feature-item {
+    padding: 35px;
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+
+.feature .item-icon {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    line-height: 90px;
+    background-color: #0071f8;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.feature .item-icon i{
+    color: #fff;
+    font-size: 44px;
+}
+
+.feature .feature-item h4 {
+    font-size: 18px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+/* End feature */
+
+
+
+
+/* Begin Most-played  */
+.most-played {
+    background-color: #f7f7f7;
+    padding: 100px 0px;
+    border-radius: 150px;
+}
+
+/* End Most-played  */
+
+/* Begin categories */
+.categories {
+    margin-top: 120px;
+}
+
+.categories .section-item-container{
+    background-color: #0071f8;
+}
+
+.categories h4 {
+    font-weight: 600;
+    color: #fff;
+    padding: 22px;
+    margin-bottom: 0px;
+}
+/* End categories */
+
+/* Begin block-sub */
+.block-sub {
+    margin-top: 120px;
+    background-color: #f7f7f7;
+    padding: 50px 0px;
+    border-radius: 150px;
+}
+
+.block-sub .search-text {
+    border: 0.5px solid #7a7a7a;
+}
+
+.block-sub .search-input{
+    text-align: -webkit-center;
+}
+
+.block-sub em {
+    color: #0071f8;
+}
+/* End block-sub */

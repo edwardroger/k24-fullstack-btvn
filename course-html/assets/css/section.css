@@ -1,0 +1,342 @@
+/* Common */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Hành động cuộn */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+body {
+    overflow-x: hidden;
+    transition: opacity 0.5s ease-in-out; /* Thay đổi opacity của trang khi chuyển trang */
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.btn-main {
+    height: 50px;
+    background-color: #ee626b;
+    color: #fff;
+    border: none;
+    padding: 0 25px;
+    font-size: 15px;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: all .3s;
+    line-height: 50px;
+    margin-bottom: 18px;
+}
+
+.btn-main:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #0071f8;
+    transform: scale(1.1); /* Phóng to khi hover */
+}
+
+/* Begin header */
+.header {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: all .5s ease 0s;
+}
+
+.header-scrolled {
+    background-color: #0071f8 !important;
+    border-radius: 0px 0px 25px 25px;
+    height: 80px!important;
+    position: fixed!important;
+    top: 0!important;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+    transition: all .5s ease 0s;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 12px;
+    width: 158px;
+}
+
+.header .nav >li {
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.header .nav li a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 20px;
+    letter-spacing: .25px;
+    line-height: 40px;
+    border-radius: 20px;
+    transition: all 0.4s ease 0s;
+}
+
+.header .nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.header .nav-active {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.header .nav-btn {
+    background-color: #ee626b;
+    text-transform: uppercase;
+    font-weight: 600!important;
+}
+
+.header .mobile-menu {
+
+}
+
+.header .mobile-menu-btn {
+    top: 0;
+    right: 0;
+    display: none;
+    color: #fff;
+    font-size: 32px;
+    float: right;
+    transition: all 0.5s ease;
+}
+
+.header .menu-icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 46px;
+}
+/* End header */
+
+/* Begin page banner */
+.page-banner {
+    background-image: url(../img/banner/banner-bg.jpg);
+    border-radius: 0px 0px 150px 150px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px 100px 0px;
+    text-align: center;
+}
+
+.page-banner h1 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.page-banner .page-heading {
+    color: #fff;
+
+}
+
+.page-banner .page-heading a{
+    color: #fff;
+    font-weight: 600;
+}
+/* End page banner */
+
+/* Begin Trending -- sử dụng lại nhiều lần*/
+.trending {
+    margin-top: 120px;
+}
+
+.section-header {
+    margin-bottom: 70px;
+}
+
+.section-header h6 {
+    text-transform: uppercase;
+    color:#ee626b;
+    font-weight: 700;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 44px;
+}
+
+.btn-section {
+    margin-top: 32px;
+
+}
+
+.btn-section a {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section-item-container {
+    background-color: #eeeeee;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.section-img {
+    border-radius: 25px;
+    overflow: hidden;
+    transition: transform 0.8s ease;
+}
+
+.section-img a img {
+    width: 100%;
+}
+
+.section-img a img:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
+}
+
+.section-img .sale {
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 10px;
+    background-color: #dc3545;
+    font-size: 14px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 4px 12px 2px 12px;
+}
+
+.section-content {
+    padding: 18px;
+}
+
+.section-content .price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ee626b;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.section-content .price em {
+    font-style: normal;
+    font-weight: 300!important;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.section-content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.section-content .icon-trending {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #ee626b;
+    color: #fff;
+    border-radius: 50%;
+    right: 25px;
+    bottom: 25px;
+    transition: all .3s;
+}
+
+.section-content .icon-trending:hover {
+    background-color: #0071f8;
+    transform: scale(1.1); /* Phóng to khi hover */
+}
+/* EndTrending */
+
+/* Begin footer */
+.footer {
+    background-color: #0071f8;
+    padding: 50px 0px;
+    border-radius: 150px 150px 0 0;
+}
+
+.support {
+
+}
+
+.support h5{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.support-content li {
+    margin: 12px 8px 12px 8px;
+
+}
+
+.support-content li span em{
+    color:#1e1e1e;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.support-content li span,
+.support-content li a{
+    color:#f7f7f7;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.support-content li a:hover{
+    color:#1e1e1e;
+
+}
+
+.support-content li a i{
+    color:#f7f7f7;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 4px;
+}
+/* End footer */
