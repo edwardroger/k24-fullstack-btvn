@@ -1,0 +1,131 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url("../images/Chrismast.jpg");
+    background-size: cover;
+}
+
+.login_cover {
+    width: 400px;
+    height: 500px;
+    margin: 140px auto;
+    padding: 20px 60px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    box-shadow: 0 0 50px white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 50px 0 40px 0;
+}
+
+.form_firstline {
+    display: flex;
+    margin: 40px 0;
+}
+
+.form_secondline {
+    display: flex;
+    margin: 40px 0;
+}
+
+.form_thirdline {
+    margin: 40px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 340px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+input:focus {
+    border: 3px solid rgb(0, 185, 0);
+    box-shadow: 0 0 20px rgb(0, 185, 0);
+}
+
+span {
+    width: 50px;
+    height: 50px;
+    transform: translate(0, 12px);
+}
+
+.form_icon {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+#form_checkbox {
+    border: 10px solid rgb(0, 0, 0);
+}
+
+.form_thirdline input {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.form_thirdline label {
+    color: rgb(0, 255, 0);
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 10px rgb(46, 255, 46);
+}
+
+.form_thirdline label:hover , .form_thirdline input:hover, .form__button-login:hover {
+    cursor: pointer;
+}
+
+.form__button-login {
+    width: 90px;
+    height: 45px;
+    margin-right: 10px;
+    background-color: rgb(233, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 30px;
+}
+
+.form__button-login:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    transition-duration: 1000ms;
+    transform: translate(0 , -5px);
+}
+
+.forthline_a {
+    text-decoration: none;
+    text-shadow: 0 0 20px rgb(255, 0, 0);
+    color: white;
+    font-size: 18px;
+}
+
+.forthline_a:hover {
+    color: rgb(255, 41, 41);
+    
+}
+
+.forthline_p {
+    font-size: 20px;
+    text-shadow: 0 0 30px black;
+    margin-top: 5px;
+}

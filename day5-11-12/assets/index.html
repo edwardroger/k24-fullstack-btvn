@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="cover">
+        <div class="profile">
+            <label for="" class="profile_name">Hoàng Đức</label>
+            <label for="" class="profile_tag">@DucHoang</label>
+            <div class="profile_avatar"></div>
+            <button>Upload New Photo</button>
+            <div class="profile_caution">
+                <p>
+                    Upload a new avatar. 
+                    Larger image will be resized automatically.
+                    <br>
+                    <br>
+                    Maximum upload size is 1TB.
+                </p>
+            </div>
+            <div class="profile_time">
+                <label>Member since:</label> December 12th 2023
+            </div>
+        </div>   
+        <div class="edit">
+            <label for="" class="edit_label">Edit Profile</label>
+            <ul class="edit_tabs">
+                <li><a href="">User info</a></li>
+                <li><a href="">Billing Information</a></li>
+            </ul>
+            <div class="edit_body">
+                <div class="edit_body__left">
+                    <label for="edit_body__left--fullname">Full name</label>
+                    <input type="text" id="edit_body__left--name">
+                    <label for="edit_body__left--password">Password</label>
+                    <input type="password" id="edit_body__left--Password">
+                    <label for="edit_body__left--email">Email Adress</label>
+                    <input type="text" id="edit_body__left--email">
+                </div>
+                <div class="edit_body__right">
+                    <label for="edit_body__right--username">Username</label>
+                    <input type="text" id="edit_body__right--username">
+                    <label for="edit_body__right--cpass">Confirm Password</label>
+                    <input type="password" id="edit_body__right--cpass">
+                    <label for="edit_body__right--cemail">Confirm Email Adress</label>
+                    <input type="text" id="edit_body__right--cemail">
+                </div>
+                <div class="edit_body__foot">
+                    <label for="">Social Profile</label>
+                    <br>
+                    <div class="edit_body__foot--facebook">
+                        <div class="edit_body__foot--facebook_icon"></div>
+                        <input type="text" placeholder="Facebook Username" 
+                        class="edit_body__foot--facebook_input">
+                    </div>
+                    <div class="edit_body__foot--twitter">
+                        <div class="edit_body__foot--twitter_icon"></div>
+                        <input type="text" placeholder="Twitter Username" 
+                        class="edit_body__foot--twitter_input">
+                    </div>
+                    <br>
+                    <div class="edit_body__foot--confirm">
+                        <button class="edit_body__foot--confirm_button">Update info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
