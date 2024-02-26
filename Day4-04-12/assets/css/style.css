@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Hành động cuộn */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.login_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 600px;
+    background-color: aliceblue;
+    margin: 20px auto;
+    border-radius: 40px;
+}
+
+.login_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login_header {
+    padding: 20px 40px;
+}
+
+.login_header .login_logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.login_header .login_title {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 12px 0;
+}
+
+.login_body {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 8px;
+    width: 100%;
+    text-align: left;
+    padding: 12px 80px;
+}
+
+.login_from_body {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.login_body .from_input {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.login_body .from_input_text {
+    margin: 8px 10px;
+}
+
+.from_input_button,
+.login_body .from_input_labal {
+    width: 100%;
+    background: rgba(22,24,35,.06);
+    border: 1.5px solid rgba(22,24,35,.06);
+    border-radius: 44px;
+    display: flex;
+    height: 44px;
+    overflow: hidden;
+    padding: 12px 14px;
+    font-style: italic;
+}
+
+.from_button {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.from_input_button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #1dbfaf;
+}
+
+.from_input_button .login_button {
+    opacity: 1;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: #1dbfaf;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn_2 {
+    margin: 0 12px;
+}
+
+.menu_icon {
+    font-size: 18px;
+    padding-right: 4px;
+}
+
+.login_forgotPassword:hover,
+.login_button:hover,
+.from_input_button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.from_text {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 0;
+    padding: 40px 16px 0;
+}
+
+.dang_ky {
+    margin-left: 4px;
+    color: red;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.login_forgotPassword {
+    text-align: center;
+    color: red;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+
+.login_footer {
+    
+}

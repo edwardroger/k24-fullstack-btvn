@@ -1,0 +1,49 @@
+body {
+    background-image: url('../../img/banner/banner-bg.jpg');
+    top: 0;
+}
+
+#login-main {
+    width: 600px;
+    background-color: aliceblue;
+    margin: 20px auto;
+    padding: 0 20px;
+    border-radius: 40px;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-header .login-logo {
+    background-color: #0d6efd;
+    padding: 12px 12px;
+    border-radius: 50px;
+}
+
+.login-body {
+    padding: 4px 12px;
+}
+
+.login-body .login-btn button {
+    margin: 0px 12px;
+}
+
+.login-body .login-btn button img {
+    padding-right: 8px;
+    width: 40px;
+    height: 30px;
+}
+
+.login-body .s-network {
+    width: 100%;
+    font-weight: 500;
+    margin: 24px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.login-footer {
+    padding: 4px 68px;
+}
+
