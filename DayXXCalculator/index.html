@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="cal">
+
+        <div class="cal__st">
+            <div class="cal__st--thumb">Duke Miles Alexander</div>
+            <label for=""> fx570MS_PLUS</label>
+        </div>
+
+        <input class="cal__dis" value="" disabled="on">
+
+        </input>
+
+        <div class="cal__control">
+            <button onclick="turnOn()">On</button>
+            <button id="btn" onclick="shutOff()">Off</button>
+            <button onclick="cancel()">C</button>
+            <button onclick="del()">Del</button>
+            <button onclick="percent()">%</button>
+            <button onclick="memory()">M+</button>
+        </div>
+
+        <div class="cal__key">
+            <button id="btn" onclick="numb('7')">7</button>
+            <button onclick="numb('8')">8</button>
+            <button onclick="numb('9')">9</button>
+            <button onclick="addition()">+</button>
+            <button onclick="numb('4')">4</button>
+            <button onclick="numb('5')">5</button>
+            <button onclick="numb('6')">6</button>
+            <button onclick="subtraction()">--</button>
+            <button onclick="numb('1')" value="1">1</button>
+            <button onclick="numb('2')">2</button>
+            <button onclick="numb('3')">3</button>
+            <button onclick="multiplication()">x</button>
+            <button onclick="division()">/</button>
+            <button onclick="numb0()">0</button>
+            <button onclick="dot()">.</button>
+            <button onclick="equal()">=</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
