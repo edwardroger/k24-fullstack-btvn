@@ -11,34 +11,43 @@ const render = (question, answer) => {
             </div>
         `;
 };
+const calculateScore = (userAnswers) => {
+  let score = 0;
+  for (let i = 0; i < userAnswers.length; i++) {
+    if (userAnswers[i] === questions[i].correctAnswer) {
+      score++;
+    }
+  }
+  return score;
+};
 
 const onHandleClick = () => {
   let next = document.getElementById("next");
   next.addEventListener("click", () => {
     let selected = document.querySelector('input[name="answer"]:checked');
     if (!selected) {
-      // console.log('Moi chon dap an');
+      alert("Please select an answer");
+      return; // Stop execution if no answer is selected
     }
     let answer = selected.value;
-    let questionNumber = document.getElementById("question_number").value;
+    let questionNumber = parseInt(
+      document.getElementById("question_number").value
+    );
 
-    //Lưu vào localstorage
-    var answerOfUser = JSON.parse(localStorage.getItem("answer"));
-    let answerLocalstorage = answerOfUser.concat([answer]);
-    localStorage.setItem("answer", JSON.stringify(answerLocalstorage));
+    // Save answer to localStorage
+    let answerOfUser = JSON.parse(localStorage.getItem("answer") || "[]");
+    answerOfUser.push(answer);
+    localStorage.setItem("answer", JSON.stringify(answerOfUser));
 
-    let totalAnswer = JSON.parse(localStorage.getItem("answer"));
-
-    //Render lại màn hình
-    let display = document.getElementById("body");
-    if (totalAnswer === 5) {
-      // Calculate total score
+    if (answerOfUser.length === 5) {
+      // All questions answered, calculate total score
       let totalCorrect = calculateScore(answerOfUser); // You need to implement this function
-      display.innerHTML = totalCorrect + "/5";
-      return;
+      let display = document.getElementById("body");
+      display.innerHTML = `${totalCorrect}/5`;
+    } else {
+      // Render next question
+      render(questions[questionNumber], answers[questionNumber]);
     }
-    display.innerHTML = "";
-    render(questions[questionNumber], answers[questionNumber]);
   });
 };
 
