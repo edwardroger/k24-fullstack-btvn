@@ -98,10 +98,6 @@ const handleVoucher = () => {
     document.getElementById('total').innerHTML = `Total: ${formatCurrency(total)}`;
 }
 
-const total = () => {
-
-}
-
 const initScreen = () => {
     render();
 }
