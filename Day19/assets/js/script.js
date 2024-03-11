@@ -89,12 +89,13 @@ const handleVoucher = () => {
     }
 
     if (inputValue.trim() !== '') {
-        document.getElementById('discount').classList.remove('hide')
+        document.getElementById('discount').classList.remove('hide');
+        total = subTotal * 95 /100;
     } else {
         alert("Vui lòng nhập mã khuyến mãi");
+        total = subTotal;
     }
 
-    total = subTotal * 95 /100;
     document.getElementById('total').innerHTML = `Total: ${formatCurrency(total)}`;
 }
 
