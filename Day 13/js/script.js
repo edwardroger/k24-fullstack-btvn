@@ -27,21 +27,21 @@
 // Bài tập
 
 // 1. Tính tổng các số bé hơn hoặc bằng 20
-let sum = 0;
+// let sum = 0;
 
-for (let i = 0; i <= 20; i++) {
-  if (i % 2 == 0) {
-    sum += i;
-  }
-}
-console.log(`Tổng các số chẵn bé hơn hoặc bàng 20 là: ${sum}`);
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 2 == 0) {
+//     sum += i;
+//   }
+// }
+// console.log(`Tổng các số chẵn bé hơn hoặc bàng 20 là: ${sum}`);
 
-// 2. In ra màn hình các số chia hết cho 5 ( <= 1000)
-for (i = 0; i <= 1000; i++) {
-  if (i % 5 == 0) {
-    console.log(`Các số chia hết cho 5 là: ${i}`);
-  }
-}
+// // 2. In ra màn hình các số chia hết cho 5 ( <= 1000)
+// for (i = 0; i <= 1000; i++) {
+//   if (i % 5 == 0) {
+//     console.log(`Các số chia hết cho 5 là: ${i}`);
+//   }
+// }
 
 // 3. Tính tiền gửi ngân hàng sau n tháng
 // - Số tiền nhập vào từ bàn phím

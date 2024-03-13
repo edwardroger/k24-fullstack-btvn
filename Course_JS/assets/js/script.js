@@ -170,6 +170,7 @@ const handleRemoveItem = (id) => {
   render();
 };
 
+
 const increaseQuantity = (id) => {
   let inputElement = document.getElementById(`product_${id}`);
   let currentValue = parseInt(inputElement.value);
@@ -198,8 +199,8 @@ const calculateProductPrice = (id) => {
 const calculateSubtotal = () => {
   let subtotal = 0;
   let productQuantities = document.querySelectorAll(".product-quantity");
-  productQuantities.forEach((input) => {
-    let id = parseInt(input.id.split("_")[1]);
+  productQuantities.forEach((input) => {  // Duyệt qua từng phần tử của input
+    let id = parseInt(input.id.split("_")[1]); // Tách phần tử 'id' được sử dụng và lấy phần tử thứ 2
     let quantity = parseInt(input.value);
     let price = products.find((product) => product.id === id).price;
     subtotal += quantity * price;
