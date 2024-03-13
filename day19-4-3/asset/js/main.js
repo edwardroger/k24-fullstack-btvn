@@ -20,11 +20,8 @@ const render = () => {
                             </div>
                             <div class="price">Price</div>
                             <div class="total-price" id="price_">
-                                ${ formatCurrency(products[key].price) }
+                                ${ formatCurrency(products[key].price * products[key].quantity) }
                             </div>
-                            <div class="total-price" id="price_">
-                            ${ formatCurrency(products[key].price * products[key].quantity) }
-                        </div>
                         </div>
                     </div>
                     <div class="col right">
