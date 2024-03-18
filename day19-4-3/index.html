@@ -43,7 +43,7 @@
                 <input type="text" id="promo-code" autocomplete="off" />
                 <button type="button" onclick="handleVoucher()"></button>
             </div>
-            <div class="text-error" style="color: red"></div>
+            <div class="text-error" style="color: red">  </div>
 
             <!-- Tổng tiền -->
             <div class="summary">
@@ -51,7 +51,7 @@
                     <li class="subtotal">Subtotal <span class="total"></span></li>
                     <li class="vat">VAT<span></span></li>
                     <li class="discount hide">Discount<span>$5.00</span></li>
-                    <li class="sub-total">Total <span class="cart-total"></span></li>
+                    <li class="sub-total">Total <span id="cart-total"></span></li>
                 </ul>
             </div>
         </section>
@@ -60,5 +60,4 @@
     <Script src="./asset/js/data.js"></Script>
     <script src="./asset/js/main.js"></script>
 </body>
-
 </html>

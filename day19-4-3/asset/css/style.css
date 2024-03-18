@@ -170,6 +170,10 @@ header .count {
 	font-size: 1.2rem;
 	font-weight: 700;
 }
+#price{
+	font-size: 16px;
+	color: red;
+}
 
 .quantity,
 .remove {
@@ -267,6 +271,7 @@ header .count {
 .hide {
 	display: none !important;
 }
+
 
 /* --- SMALL SCREEN --- */
 @media all and (max-width: 599px) {

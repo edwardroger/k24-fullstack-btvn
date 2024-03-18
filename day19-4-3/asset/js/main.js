@@ -20,7 +20,7 @@ const render = () => {
                             </div>
                             <div class="price">Price</div>
                             <div class="total-price" id="price_">
-                                ${ formatCurrency(products[key].price * products[key].quantity) }
+                                ${ formatCurrency(products[key].price) }
                             </div>
                         </div>
                     </div>
@@ -37,12 +37,14 @@ const render = () => {
                             </span>
                         </div>
                     </div>
+                    <div class="total-price" id="price">
+                        ${formatCurrency(products[key].totalPrice || products[key].price * products[key].quantity)}
+                    </div>
                 </li>
                 `;
     }
     productsHtml.innerHTML = html;
 }
-
 const handleRemoveItem = (id) => {
     //Cách 1: Dùng filter để lọc ra các sản phẩm ko trùng id
     // products = products.filter(item => item.id !== id);
@@ -61,7 +63,6 @@ const handleRemoveItem = (id) => {
 
     render();
 }
-
 const handleQuantityChange = (id, value) => {
     for (const key in products) {
         if (products[key].id === id) {
@@ -71,11 +72,34 @@ const handleQuantityChange = (id, value) => {
     }
     render();
 }
+const handleVoucher = () =>{
+    let valueCode = document.getElementById('promo-code').value;
+    for(const key in voucher){
+        if(voucher[key].codeVoucher == valueCode && voucher[key].id == products[key].id){
+            let discountApplied = products[key].price * products[key].quantity * voucher[key].discount;
+            products[key].totalPrice = discountApplied;
+            break;
+        }
+    }
+    render();
+}
+
+const total = () =>{
+    let totalBefore = 0;
+    let totalAfter = 0;
+    for(const key  in products){
+        totalBefore += products[key].price * products[key].quantity;
+    }
+    render();
+    let totalAmountHtml = document.getElementById('cart-total');
+    totalAmountHtml.innerHTML = formatCurrency(totalBefore);
+}
+total();
 
 const initScreen = () => {
     render();
 }
-
 initScreen();
+
 
 
